@@ -1,0 +1,59 @@
+#Google {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+}
+
+#advanced_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+label {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+
+}
+
+.text_container input {
+    max-width: 554px; 
+    border: none;
+    padding: 8px, 1px;
+    margin: none;
+}
+
+.numbers_container input {
+    max-width: 243px; 
+    border: none;
+    padding: 8px, 1px;
+    margin: none;
+}
+
+.search_link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.images_link {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.advanced_link {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+input[type="submit"] {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+input[type="submit"]:hover {
+    color: brown;
+}
