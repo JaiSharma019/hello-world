@@ -16,3 +16,5 @@ for i in range(t):
         arr.append("YES")
     else:
         arr.append("NO")
+for l in arr:
+    print(l)
