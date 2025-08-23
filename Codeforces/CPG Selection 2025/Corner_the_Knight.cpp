@@ -14,6 +14,9 @@ int main() {
         int feasible{0};
         int count{};
         for (int a=0; a<n_arr[i];++a) {
+            if(a%3==0){
+                feasible+=1;
+            }
             
             for (int b=count; b<a;++b) {
                 if ((a+b)%3==0) {
@@ -25,12 +28,9 @@ int main() {
             }
             
         }
-        for (int a=0;a<n_arr[i];++a) {
-            if (a%3==0) {
-                    feasible+=1;
-            }    
+           
             
-        }
+        
         feasible_arr[i]=feasible;
     }
     for (int i=0;i<t;++i) {
