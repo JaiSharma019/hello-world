@@ -12,20 +12,16 @@ int main() {
     int feasible_arr[t];
     for (int i=0;i<t;++i) {
         int feasible{0};
-        int count{};
+        
         for (int a=0; a<n_arr[i];++a) {
-            if(a%3==0){
-                feasible+=1;
+            if(n_arr[i]%2==0) {
+                (n_arr[i]-a)%2==0?feasible+=2:feasible+=1;
+            }
+            else {
+                (n_arr[i]-a)%2==0?feasible+=1:feasible+=2;
             }
             
-            for (int b=count; b<a;++b) {
-                if ((a+b)%3==0) {
-                    feasible+=2;
-                    count+= 1; 
-                    break;                  
-                }
-                
-            }
+            
             
         }
            
